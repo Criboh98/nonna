@@ -529,3 +529,98 @@ to {
 
 
 }
+.flower {
+
+    position:absolute;
+
+    font-size:45px;
+
+    opacity:0;
+
+    animation:
+
+        flowerAppear 3s ease forwards,
+
+        flowerMove 6s ease-in-out infinite;
+
+}
+
+
+
+.flower-one {
+
+    left:120px;
+
+    bottom:180px;
+
+    animation-delay:1s;
+
+}
+
+
+
+.flower-two {
+
+    left:300px;
+
+    bottom:220px;
+
+    animation-delay:2s;
+
+}
+
+
+
+.flower-three {
+
+    right:180px;
+
+    bottom:160px;
+
+    animation-delay:3s;
+
+}
+
+
+
+@keyframes flowerAppear {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes flowerMove {
+
+
+    0%,100% {
+
+        rotate:0deg;
+
+    }
+
+
+    50% {
+
+        rotate:5deg;
+
+    }
+
+}
