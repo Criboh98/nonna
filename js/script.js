@@ -428,27 +428,32 @@ function createPhotos(list){
 
         if(index===0){
 
-            frame.style.left="0px";
-            frame.style.top="70px";
+    frame.style.left="0px";
+    frame.style.top="70px";
 
-        }
+    frame.classList.add("photo-one");
 
-
-        if(index===1){
-
-            frame.style.left="150px";
-            frame.style.top="10px";
-
-        }
+}
 
 
-        if(index===2){
+if(index===1){
 
-            frame.style.left="300px";
-            frame.style.top="80px";
+    frame.style.left="150px";
+    frame.style.top="10px";
 
-        }
+    frame.classList.add("photo-two");
 
+}
+
+
+if(index===2){
+
+    frame.style.left="300px";
+    frame.style.top="80px";
+
+    frame.classList.add("photo-three");
+
+}
 
         photos.appendChild(frame);
 
