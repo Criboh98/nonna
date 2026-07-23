@@ -70,25 +70,31 @@ body {
 
     left: 90px;
 
-    bottom: 190px;
+    bottom: 180px;
 
-    width: 330px;
+    width: 350px;
 
-    padding: 15px;
+    padding: 18px;
 
-    background: #fffaf0;
+    background: linear-gradient(
+        135deg,
+        #e8d2a8,
+        #fff8e7
+    );
+
+    border: 12px solid #d8b77a;
 
     box-shadow:
-        0 15px 35px rgba(0,0,0,0.35);
+        0 20px 40px rgba(0,0,0,0.45),
+        inset 0 0 20px rgba(120,80,30,0.2);
 
     transform: rotate(-3deg);
 
-    z-index: 3;
+    z-index:3;
 
     animation: photoAppear 1.5s ease;
 
 }
-
 
 
 #character {
