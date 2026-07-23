@@ -298,3 +298,36 @@ body {
     }
 
 }
+.page-turn {
+
+    animation: turnPage 1s ease;
+
+}
+
+
+
+@keyframes turnPage {
+
+
+    from {
+
+        opacity:0;
+
+        transform:
+        rotateY(-25deg)
+        translateX(50px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:
+        rotateY(0)
+        translateX(0);
+
+    }
+
+}
