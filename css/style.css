@@ -709,3 +709,53 @@ to {
     }
 
 }
+
+
+.signature {
+
+    margin-top:35px;
+
+
+    font-family:'Dancing Script', cursive;
+
+
+    font-size:55px;
+
+
+    color:#70411e;
+
+
+    text-align:center;
+
+
+    opacity:0;
+
+
+    animation:signatureAppear 4s ease forwards;
+
+
+}
+
+
+
+@keyframes signatureAppear {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
