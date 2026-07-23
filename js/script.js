@@ -501,6 +501,22 @@ if(page.title === "Credits"){
     document.getElementById("book")
     .appendChild(message);
 
+  let signature=document.createElement("div");
+
+
+signature.className="signature";
+
+
+signature.innerHTML=
+`
+With love,<br>
+Cristiana
+`;
+
+
+document.getElementById("book")
+.appendChild(signature);
+
 
 }
 else{
