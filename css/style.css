@@ -287,6 +287,28 @@ body {
 }
 
 
+.photo-one {
+
+    transform:rotate(-5deg);
+
+}
+
+
+
+.photo-two {
+
+    transform:rotate(4deg);
+
+}
+
+
+
+.photo-three {
+
+    transform:rotate(-3deg);
+
+}
+
 
 @keyframes photoFloat {
 
