@@ -68,43 +68,69 @@ body {
 
     position: absolute;
 
-    left: 90px;
+    left: 110px;
 
-    bottom: 180px;
+    bottom: 175px;
 
-    width: 350px;
+    width: 360px;
 
-    padding: 18px;
+    padding: 20px;
 
-    background: linear-gradient(
-        135deg,
-        #e8d2a8,
-        #fff8e7
-    );
+    background: #fffdf5;
 
-    border: 12px solid #d8b77a;
+    border: 1px solid rgba(120,80,40,0.25);
 
     box-shadow:
-        0 20px 40px rgba(0,0,0,0.45),
-        inset 0 0 20px rgba(120,80,30,0.2);
 
-    transform: rotate(-3deg);
+        0 15px 25px rgba(0,0,0,0.35),
 
-    z-index:3;
+        0 0 0 12px #efe0c2;
 
-    animation: photoAppear 1.5s ease;
+    transform: rotate(-4deg);
+
+    z-index: 3;
+
+    animation: photoAppear 1.2s ease;
 
 }
+
+
+
+#photo-frame::before {
+
+    content:"";
+
+    position:absolute;
+
+    top:-18px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90px;
+
+    height:25px;
+
+    background:rgba(220,190,140,0.7);
+
+    opacity:0.8;
+
+}
+
 
 
 #character {
 
-    width: 100%;
+    width:100%;
 
-    display: block;
+    display:block;
+
+    filter:
+        sepia(10%)
+        contrast(95%);
 
 }
-
 
 
 /* Story paper */
