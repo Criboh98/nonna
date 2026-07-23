@@ -1,160 +1,201 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
-body{
+body {
 
-    background:#1d1b18;
+    background: #1d1b18;
 
-    height:100vh;
+    height: 100vh;
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: center;
 
-    font-family:Georgia, serif;
-
-}
-
-
-
-#game{
-
-    width:1280px;
-
-    height:720px;
-
-    position:relative;
-
-    overflow:hidden;
-
-    border-radius:20px;
-
-    box-shadow:0 0 40px black;
+    font-family: Georgia, "Times New Roman", serif;
 
 }
 
 
 
-#background{
+#game {
 
-    position:absolute;
+    width: 1280px;
 
-    width:100%;
+    height: 720px;
 
-    height:100%;
+    position: relative;
 
-    object-fit:cover;
+    overflow: hidden;
 
-}
+    border-radius: 20px;
 
-
-
-.character{
-
-    position:absolute;
-
-    bottom:130px;
-
-    height:520px;
-
-    transition:0.8s ease;
+    box-shadow: 0 0 50px rgba(0,0,0,0.6);
 
 }
 
 
 
-#character-left{
+/* Background of each memory */
 
-    left:120px;
+#background {
 
-}
+    position: absolute;
 
+    width: 100%;
 
+    height: 100%;
 
-#character-right{
-
-    right:120px;
-
-}
-
-
-
-#dialogue-box{
-
-    position:absolute;
-
-    bottom:0;
-
-    width:100%;
-
-    min-height:180px;
-
-    background:rgba(255,248,230,0.95);
-
-    border-top:5px solid #c78b48;
-
-    padding:25px;
+    object-fit: cover;
 
 }
 
 
 
-#speaker{
+/* Family photographs */
 
-    color:#8a5528;
+.character {
 
-    font-size:28px;
+    position: absolute;
 
-}
+    bottom: 150px;
 
+    height: 430px;
 
+    background: #fffdf7;
 
-#story-text{
+    padding: 14px;
 
-    margin-top:15px;
+    border-radius: 6px;
 
-    font-size:24px;
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.35);
 
-    line-height:1.5;
-
-}
-
-
-
-#next-button{
-
-    position:absolute;
-
-    right:30px;
-
-    bottom:25px;
-
-    padding:12px 28px;
-
-    background:#bb7b39;
-
-    border:none;
-
-    border-radius:12px;
-
-    color:white;
-
-    font-size:18px;
-
-    cursor:pointer;
+    transition: all 0.8s ease;
 
 }
 
 
 
-#next-button:hover{
+/* Left photo */
 
-    background:#8f5b2b;
+#character-left {
+
+    left: 120px;
+
+    transform: rotate(-3deg);
+
+}
+
+
+
+/* Right photo */
+
+#character-right {
+
+    right: 120px;
+
+    transform: rotate(3deg);
+
+}
+
+
+
+/* Memory text area */
+
+#dialogue-box {
+
+    position: absolute;
+
+    bottom: 0;
+
+    width: 100%;
+
+    min-height: 180px;
+
+    background: rgba(255,248,230,0.96);
+
+    border-top: 5px solid #c78b48;
+
+    padding: 25px 35px;
+
+}
+
+
+
+/* Speaker name */
+
+#speaker {
+
+    color: #8a5528;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* Story text */
+
+#story-text {
+
+    color: #3f3025;
+
+    font-size: 24px;
+
+    line-height: 1.5;
+
+    max-width: 950px;
+
+}
+
+
+
+/* Continue button */
+
+#next-button {
+
+    position: absolute;
+
+    right: 35px;
+
+    bottom: 30px;
+
+    padding: 12px 30px;
+
+    background: #bb7b39;
+
+    border: none;
+
+    border-radius: 12px;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-family: Georgia, serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+
+#next-button:hover {
+
+    background: #8f5b2b;
+
+    transform: scale(1.05);
 
 }
