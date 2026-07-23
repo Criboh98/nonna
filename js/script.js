@@ -473,6 +473,42 @@ function showPage(){
     background.src = page.background;
 
 
+  // garden flowers
+
+document.querySelectorAll(".flower").forEach(f => f.remove());
+
+
+if(page.title === "Her Garden"){
+
+
+    let flowers = [
+        "flower-one",
+        "flower-two",
+        "flower-three"
+    ];
+
+
+    flowers.forEach(className=>{
+
+
+        let flower=document.createElement("div");
+
+
+        flower.innerHTML="🌸";
+
+
+        flower.className="flower " + className;
+
+
+        document.body.appendChild(flower);
+
+
+    });
+
+
+}
+
+
     title.innerHTML = page.title;
 
 
