@@ -126,18 +126,17 @@ body {
 
 #title {
 
-
     font-family:'Cormorant Garamond', serif;
 
-
-    font-size:44px;
-
+    font-size:48px;
 
     color:#70411e;
 
+    text-align:center;
 
-    margin-bottom:25px;
+    margin-bottom:30px;
 
+    letter-spacing:1px;
 
 }
 
