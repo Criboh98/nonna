@@ -326,6 +326,18 @@ function showPage(){
     text.innerHTML = page.text.replace(/\n/g, "<br>");
 
 
+    document.getElementById("story-page")
+.classList.remove("page-turn");
+
+
+setTimeout(()=>{
+
+document.getElementById("story-page")
+.classList.add("page-turn");
+
+},50);
+
+
 
     if(page.character){
 
