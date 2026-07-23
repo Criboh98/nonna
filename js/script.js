@@ -473,6 +473,46 @@ function showPage(){
     background.src = page.background;
 
 
+  // final cinematic ending
+
+document.querySelectorAll(".final-message").forEach(e => e.remove());
+
+
+if(page.title === "Credits"){
+
+
+    document.getElementById("book")
+    .classList.add("final-fade");
+
+
+    let message=document.createElement("div");
+
+
+    message.className="final-message";
+
+
+    message.innerHTML=
+    `
+    And somewhere, inside a little yellow house in Uggiano La Chiesa...<br><br>
+    the light is still on.
+    `;
+
+
+    document.getElementById("book")
+    .appendChild(message);
+
+
+}
+else{
+
+
+    document.getElementById("book")
+    .classList.remove("final-fade");
+
+
+}
+
+
   // garden flowers
 
 document.querySelectorAll(".flower").forEach(f => f.remove());
