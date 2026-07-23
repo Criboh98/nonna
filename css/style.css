@@ -233,34 +233,37 @@ body {
 
 .photo-frame {
 
-
     position:absolute;
 
-
     width:240px;
-
 
     padding:14px;
 
 
-    background:#fff8e7;
+    background:#fff9ea;
 
 
-    border:18px solid #8b5429;
+    border:20px solid #7b451f;
+
+
+    border-radius:4px;
 
 
     box-shadow:
 
+        0 25px 45px rgba(0,0,0,0.55),
 
-        0 15px 35px rgba(0,0,0,0.5),
-
-
-        inset 0 0 15px rgba(255,220,150,0.5);
+        inset 0 0 20px rgba(255,220,150,0.5);
 
 
+    animation:
 
-    animation:photoAppear 1.2s ease;
+        photoAppear 1.2s ease,
 
+        photoFloat 6s ease-in-out infinite;
+
+
+    overflow:hidden;
 
 }
 
@@ -268,22 +271,40 @@ body {
 
 .photo-frame img {
 
-
     width:100%;
-
 
     display:block;
 
 
     filter:
 
-        sepia(12%)
+        sepia(18%)
 
-        contrast(95%);
+        contrast(92%)
 
+        brightness(105%);
 
 }
 
+
+
+@keyframes photoFloat {
+
+
+    0%,100% {
+
+        transform:translateY(0);
+
+    }
+
+
+    50% {
+
+        transform:translateY(-8px);
+
+    }
+
+}
 
 
 /* Button */
